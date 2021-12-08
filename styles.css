@@ -1,0 +1,91 @@
+body {
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+}
+
+/************** NAVBAR *******************/
+
+.nav-link-left,
+.nav-title a,
+.nav-link-right {
+  color: #f2da96;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 100ms ease-in-out;
+}
+
+.nav-title a {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main-navbar {
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.nav-title {
+  margin: 0;
+  text-align: center;
+}
+
+.nav-list-left,
+.nav-list-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-mobile-link i,
+.menu-btn i {
+  background: rgb(17, 17, 17);
+}
+
+.nav-toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: none;
+}
+
+.nav-toggle div {
+  width: 2rem;
+  height: 3px;
+  background-color: #f2da96;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+/************** END OF NAVBAR *******************/
