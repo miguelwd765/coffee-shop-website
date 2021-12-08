@@ -88,4 +88,50 @@ body {
   border-radius: 3px;
 }
 
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(17, 17, 17);
+  min-width: 8rem;
+  z-index: 1;
+}
+
+.menu-btn {
+  font-family: "Urbanist", sans-serif;
+  border: none;
+  background-color: rgb(17, 17, 17);
+  color: #f2da96;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 100ms ease-in-out;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.items-hidden {
+  padding: 0.5rem 0.5rem;
+}
+
+.links-hidden {
+  display: inline-block;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.links-hidden:hover {
+  color: #ab9e7b;
+}
+
 /************** END OF NAVBAR *******************/
