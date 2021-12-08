@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 1rem 2rem;
-  max-width: 1100px;
+  max-width: 1250px;
   margin: 0 auto;
   border-radius: 3px;
 }
@@ -72,6 +72,13 @@ body {
   background: rgb(17, 17, 17);
 }
 
+.nav-link-left:hover,
+.nav-title a:hover,
+.nav-link-right:hover,
+.menu-btn:hover {
+  color: #ab9e7b;
+}
+
 .nav-toggle {
   cursor: pointer;
   position: absolute;
@@ -101,12 +108,13 @@ body {
   border: none;
   background-color: rgb(17, 17, 17);
   color: #f2da96;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
   font-weight: 600;
   transition: color 100ms ease-in-out;
+  padding: 0;
 }
 
 .dropdown-menu {
