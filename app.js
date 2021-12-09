@@ -7,7 +7,6 @@ shopBtn.addEventListener("click", function (e) {
 
   window.addEventListener("click", function (e) {
     if (
-      e.target.matches(".links-hidden") ||
       e.target.matches(".dropdown-menu") ||
       e.target.matches(".menu-btn") ||
       e.target.matches(".items-hidden") ||
