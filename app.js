@@ -1,6 +1,5 @@
 const shopBtn = document.querySelector(".menu-btn");
 const menuContent = document.querySelector(".menu-content");
-const dropDown = document.querySelector(".dropdown-menu");
 
 shopBtn.addEventListener("click", function (e) {
   menuContent.classList.toggle("menu-content-show");
@@ -30,7 +29,7 @@ navToggle.addEventListener("click", function () {
     if (links.style.animation) {
       links.style.animation = "";
     } else {
-      links.style.animation = `navLinksFade .1s ease forwards ${
+      links.style.animation = `navLinksFade .2s ease forwards ${
         index / 10 + 0.1
       }s`;
     }
@@ -42,4 +41,17 @@ const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
 
 mobileMenuBtn.addEventListener("click", function (e) {
   mobileMenuContent.classList.toggle("menu-content-show");
+
+  window.addEventListener("click", function (e) {
+    if (
+      e.target.matches(".mobile-dropdown") ||
+      e.target.matches(".mobile-menu-btn") ||
+      e.target.matches(".items-hidden") ||
+      e.target.matches("#drop-icon-mobile")
+    ) {
+      return;
+    } else {
+      mobileMenuContent.classList.remove("menu-content-show");
+    }
+  });
 });
