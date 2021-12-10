@@ -55,3 +55,17 @@ mobileMenuBtn.addEventListener("click", function (e) {
     }
   });
 });
+
+const newsInput = document.querySelector(".newsletter-input");
+const newsTitle = document.querySelector(".newsletter-title");
+const newsForm = document.querySelector(".newsletter-form");
+
+newsForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (!newsInput.value) {
+    alert("Not a valid email address");
+  } else {
+    newsTitle.textContent = "You are now added to the newsletter.";
+    newsInput.value = "";
+  }
+});

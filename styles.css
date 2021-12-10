@@ -276,7 +276,7 @@ section {
 
 @media screen and (max-width: 850px) {
   .section-title {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     width: 80%;
     margin: 0 auto;
   }
@@ -291,7 +291,8 @@ section {
   width: 50%;
 }
 
-.hero-text {
+.hero-text,
+.about-text {
   width: 40%;
   margin: auto;
   color: #fff;
@@ -334,3 +335,70 @@ section {
   }
 }
 /************** END OF HERO *******************/
+
+/************** ABOUT *******************/
+.about-text {
+  width: 90%;
+}
+
+.about-header span {
+  display: block;
+}
+
+.underline {
+  height: 0.2rem;
+  width: 15rem;
+  background: #f2da96;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .underline {
+    width: 10rem;
+  }
+}
+
+/************** END OF ABOUT *******************/
+
+/************** NEWSLETTER *******************/
+.newsletter-container {
+  background-color: rgb(17, 17, 17);
+  padding: 2rem 0;
+  border-radius: 3px;
+}
+
+.newsletter-text {
+  color: #fff;
+}
+
+.newsletter-input,
+.newsletter-btn {
+  padding: 0.75rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.newsletter-btn {
+  background-color: #f2da86;
+  text-transform: uppercase;
+  width: 7rem;
+}
+
+@media screen and (max-width: 850px) {
+  .newsletter-container {
+    padding: 2rem;
+  }
+
+  .newsletter-input,
+  .newsletter-btn {
+    width: 7rem;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+}
+/************** END OF NEWSLETTER *******************/
