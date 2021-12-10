@@ -9,23 +9,6 @@ body {
 
 /************** NAVBAR *******************/
 
-.nav-link-left,
-.nav-title a,
-.nav-link-right {
-  color: #f2da96;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: color 100ms ease-in-out;
-}
-
-.nav-title a {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
 .main-navbar {
   background-color: rgb(17, 17, 17);
   display: flex;
@@ -61,19 +44,6 @@ body {
   width: 100%;
 }
 
-.nav-item-right,
-.nav-item-left {
-  margin: 0 1rem;
-  text-align: center;
-}
-
-.nav-link-left:hover,
-.nav-title a:hover,
-.nav-link-right:hover,
-.menu-btn:hover {
-  color: #ab9e7b;
-}
-
 .dropdown-menu {
   position: relative;
   display: inline-block;
@@ -107,6 +77,40 @@ body {
   padding: 0;
 }
 
+.nav-item-right,
+.nav-item-left {
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.nav-link-left,
+.nav-title a,
+.nav-link-right {
+  color: #f2da96;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 100ms ease-in-out;
+}
+
+.nav-title a {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-link-left:hover,
+.nav-title a:hover,
+.nav-link-right:hover,
+.menu-btn:hover {
+  color: #ab9e7b;
+}
+
+.nav-mobile {
+  display: none;
+}
+
 .items-hidden {
   padding: 0.5rem 0.5rem;
 }
@@ -127,4 +131,127 @@ body {
   color: #ab9e7b;
 }
 
+.nav-toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 1.15rem;
+  right: 1rem;
+  display: none;
+}
+
+.nav-toggle div {
+  width: 2rem;
+  height: 3px;
+  background-color: #f2da96;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 850px) {
+  .main-navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .nav-center {
+    padding: 0;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-mobile {
+    position: absolute;
+    width: 100%;
+    background: rgb(17, 17, 17);
+    display: inline-block;
+    transform: scale(0, 0);
+    transform-origin: top;
+    transition: all 200ms ease-in;
+  }
+
+  .nav-mobile-active {
+    transform: scale(1, 1);
+    transform-origin: top;
+  }
+
+  .nav-mobile-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav-mobile-item {
+    margin: 1.5rem 0;
+  }
+
+  .nav-mobile-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f2da96;
+    transition: all 100ms ease-in;
+    opacity: 0;
+  }
+
+  .mobile-dropdown {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+  }
+
+  .mobile-menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(17, 17, 17);
+    z-index: 1;
+    text-align: left;
+  }
+
+  .menu-content-show {
+    display: block;
+  }
+
+  .mobile-menu-btn {
+    font-family: "Urbanist", sans-serif;
+    border: none;
+    background-color: rgb(17, 17, 17);
+    color: #f2da96;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: color 100ms ease-in-out;
+  }
+
+  .nav-mobile-link i,
+  .menu-btn i {
+    background: rgb(17, 17, 17);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .nav-title a {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /************** END OF NAVBAR *******************/
