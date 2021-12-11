@@ -69,3 +69,17 @@ newsForm.addEventListener("submit", function (e) {
     newsInput.value = "";
   }
 });
+
+const indQuestion = document.querySelectorAll(".question-ind");
+
+for (let question of indQuestion) {
+  const btn = question.querySelector(".question-btn");
+  btn.addEventListener("click", function (e) {
+    for (let q of indQuestion) {
+      if (q !== question) {
+        q.classList.remove("show-text");
+      }
+    }
+    question.classList.toggle("show-text");
+  });
+}

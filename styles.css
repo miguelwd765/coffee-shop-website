@@ -435,10 +435,13 @@ section {
   padding: 1rem 0 0.5rem;
   color: #fff;
   background-color: #222;
+}
+
+.question-answer {
   display: none;
 }
 
-.show-answer .question-answer {
+.show-text .question-answer {
   display: block;
 }
 
