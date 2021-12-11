@@ -1,7 +1,7 @@
 # Coffee Shop Website ☕
 
 This is a project I have built using vanilla HTML, CSS, and JavaScript. I did
-also use **[Font Awesome](https://fontawesome.com/)** icons and two images from **[Unsplash](https://unsplash.com/)**.
+also use **[Font Awesome](https://fontawesome.com/)** icons and two images from **[Unsplash](https://unsplash.com/)**. This is a website for a fictional coffee shop that I have come up with. Thank you.
 
 #### Key Features
 
