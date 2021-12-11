@@ -5,8 +5,16 @@ also use **[Font Awesome](https://fontawesome.com/)** icons and two images from 
 
 #### Key Features
 
-- Mobile responsive
+- Mobile responsive 📱
 - Functional Buttons (navbar, newsletter section, FAQ)
 - Navbar animation
 - Dropdown within navbar
-- Modern design
+- Modern design 🖥️
+
+![image](https://i.imgur.com/4RpDfQG.png)
+![image](https://i.imgur.com/ETqW0eh.png)
+
+![image](https://i.imgur.com/DEPRIIb.png)
+
+![image](https://i.imgur.com/MQuLWsU.png)
+![image](https://i.imgur.com/tLFsjy5.png)
