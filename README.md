@@ -3,6 +3,8 @@
 This is a project I have built using vanilla HTML, CSS, and JavaScript. I did
 also use **[Font Awesome](https://fontawesome.com/)** icons and two images from **[Unsplash](https://unsplash.com/)**. This is a website for a fictional coffee shop that I have come up with. Thank you.
 
+Take a closer look at the site **[here](https://miguelwd765.github.io/coffee-shop-website/)**.
+
 #### Key Features
 
 - Mobile responsive 📱
