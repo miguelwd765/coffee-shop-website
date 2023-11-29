@@ -1,3 +1,4 @@
+// adding a note 11/29/2023
 const shopBtn = document.querySelector(".menu-btn");
 const menuContent = document.querySelector(".menu-content");
 
